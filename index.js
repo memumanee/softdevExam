@@ -3,9 +3,9 @@ const isPrime = require('./Prime')
 const app = express()
 const port = 3000
 
-app.get('/is_prime/:X', (req, res) => {
+app.get('/is_prime/:Y', (req, res) => {
    let{X} = req.params
-   let response = isPrime(X)
+   let response = isPrime(Y)
    res.send(response)
 })
 
