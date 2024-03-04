@@ -4,7 +4,7 @@ const app = express()
 const port = 3000
 
 app.get('/is_prime/:Y', (req, res) => {
-   let{X} = req.params
+   let{Y} = req.params
    let response = isPrime(Y)
    res.send(response)
 })
